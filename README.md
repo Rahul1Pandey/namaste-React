@@ -202,5 +202,3 @@ Ways to style your page.
 - Create the menu page
 - Create header and body of accordian
 - Lifting the state up
-
-# Rahul Pandey

@@ -1,17 +1,25 @@
+import { useState } from "react";
 import ItemList from "./itemList";
 
 
-const RestaurentCategory=(data)=>{
-    // console.log(data)
+const RestaurentCategory=({data,showItems})=>{
+  
+  console.log(showItems);
+  // const [showItems,setshowItems] = useState(false)
+    // console.log(showItems)
+  const handleClick = ()=>{
+    // setshowItems(!showItems)
+    // console.log("fun working..")
+  }
     return (
     <div>
            <div className="w-[90%] mx-auto my-2 shadow-xl bg-gray-50  py-6  rounded-sm">
-                <div className="flex justify-between">
-                  <span className="px-4 text-[20px] font-bold text-orange-600">{data.data.title} ({data.data.itemCards.length})</span>
+                <div className="flex justify-between cursor-pointer" onClick={handleClick}>
+                  <span className="px-4 text-[20px] font-bold text-orange-600">{data.title} ({data.itemCards.length})</span>
                   <span>⬇️</span>
                 </div>
             
-             <ItemList lists = {data?.data?.itemCards} />
+            {showItems && <ItemList lists = {data?.itemCards} />}
            </div>
     </div>
     )

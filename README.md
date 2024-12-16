@@ -202,3 +202,12 @@ Ways to style your page.
 - Create the menu page
 - Create header and body of accordian
 - Lifting the state up
+
+# Eepisode_12 redux
+
+- Install @reduxjs/toolkit react-redux
+- Build our store
+- Connect our store to our app
+- Slice(cart slice)
+- Dispatch(action)
+- Selector

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Shimmer from './Shimmer'
 import { useParams } from 'react-router'
 
@@ -7,6 +7,8 @@ import useRestaurentMenu from "../utils/useRestaurentMenu"
 import RestaurentCategory from "./RestaurentCategory"
 
 const RestaurentMenu = () => { 
+
+  const [showIndex,setshowIndex] = useState(null)
   
   const {resId }= useParams();
   const resInfo =  useRestaurentMenu(resId)
@@ -39,7 +41,8 @@ const RestaurentMenu = () => {
         categories.map((category,index)=>(
              <RestaurentCategory key={index} data={category?.card?.card}
                
-             showItems={true}
+             showItems={index===showIndex?true:false}
+                setshowIndex = {()=>setshowIndex(index)}
              />
               
         ))

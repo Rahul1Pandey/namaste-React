@@ -211,3 +211,19 @@ Ways to style your page.
 - Slice(cart slice)
 - Dispatch(action)
 - Selector
+
+# type of testing
+- unit testing
+- integration testing
+- End to End testing
+
+# Setting up testing in our app
+- istall React Tsting Library
+- install jest
+- install Babel dependencies
+- configure Babel
+- configure parcel config file to disabled default babel transpilation 
+- jest configuration - npx jest --init
+- install jsdom library
+- install @babel/preset-react -- to make jsx work in our react case
+- install npm i -D @testing-library/jest-dom

@@ -18,12 +18,12 @@ const Header = ()=>{
     const cartItems = useSelector((store)=> store.cart.items)
            console.log(cartItems)   
     return (
-      <div className="sticky top-0 overflow-hidden flex justify-between bg-green-400 shadow-lg">
+      <div className="sticky top-0 overflow-hidden  flex justify-between bg-green-400 shadow-lg">
           <div className="logo">
             <img className="w-20 rounded-3xl"src={LOGO_URL}></img>
           </div>
           <div >
-            <ul className="flex p-4 m-4 justify-between gap-6 font-bold text-xl">
+            <ul className="flex p-4 m-4 justify-between gap-6 font-bold text-xl ">
               <li>
                     {onlineStatus?"🟡":"🔴"}
               </li>

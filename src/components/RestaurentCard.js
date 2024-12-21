@@ -12,8 +12,8 @@ const RestaurentCard = (props)=>{
     const {cloudinaryImageId,name,locality,cuisines,areaName,costForTwo,avgRating} = resData?.info
     
       return (
-        <div className="m-4 p-4 w-[200px]  gap-[32px]  rounded-xl  hover:scale-105">
-              <img className="rounded-lg w-full h-full" src={CDN_URL+cloudinaryImageId}></img>
+        <div className="w- m-4 p-4  w-[300px] h-[400px] gap-[32px]  rounded-xl  hover:scale-105 ease-in-out duration-500">
+              <img className="rounded-lg w-full h-[60%]" src={CDN_URL+cloudinaryImageId}></img>
               <h3 className="font-bold py-2">{name}</h3>
               <h3>{locality}</h3>
               <h3>{cuisines.join(" , ")}</h3>

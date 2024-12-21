@@ -30,7 +30,7 @@ if (onlineStatus===false) return <h1>you are offline please check your internet 
   const {loggedInUser,setuserName} = useContext(UserContext)
 
     return listOfRestaurent.length===0 ? <Shimmer /> : (
-      <div className="body">
+      <div className="body ml-8">
         <div className="flex">
           <div className="search p-3 m-3 ">
              <input type="text" className="border-2 border-solid border-black p-[3] rounded-xl"
